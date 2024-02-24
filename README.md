@@ -1,0 +1,2 @@
+# ERAv2S5
+A CNN for MNIST
