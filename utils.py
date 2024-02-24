@@ -87,4 +87,4 @@ def test(model, device, test_loader, criterion, test_losses, test_acc):
     print('Test set: Average loss: {:.4f}, Accuracy: {}/{} ({:.2f}%)\n'.format(
         test_loss, correct, len(test_loader.dataset),
         100. * correct / len(test_loader.dataset)))
-    return test_acc.append(100. * correct / len(test_loader.dataset)), test_losses.append(test_loss)
+    return test_acc+[100. * correct / len(test_loader.dataset)], test_losses+[test_loss]
