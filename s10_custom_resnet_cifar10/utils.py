@@ -4,7 +4,6 @@ from torchvision.transforms import v2
 from torch_lr_finder import LRFinder
 from tqdm import tqdm
 import numpy
-from model import CustomResNet
 # from torch.optim.lr_scheduler import OneCycleLR
 
 # Train data transformations

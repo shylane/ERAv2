@@ -15,6 +15,7 @@ The code is organized into separate files to promote modularity and reusability.
 - Python 3.x
 - PyTorch 1.x
 - torchvision
+- torchsummary
 - pytorch-lr-finder
 - tensorboard
 - matplotlib
@@ -23,7 +24,7 @@ The code is organized into separate files to promote modularity and reusability.
 ## Usage
 
 1. Clone this repository.
-2. Install required libraries: `pip install torch torchvision matplotlib tqdm pytorch-lr-finder`
+2. Install required libraries: `pip install torch torchvision torchsummary matplotlib tqdm torch-lr-finder`
 3. Open the Jupyter Notebook `S11.ipynb` and follow the instructions within the notebook to train and test the CNN, and see the summary.
 
 ## Key Features
