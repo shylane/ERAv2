@@ -31,8 +31,8 @@ def test_data():
 
 def find_lr(train_loader,test_loader,device,model,optimizer,criterion):
     lr_finder = LRFinder(model, optimizer, criterion, device=device)
-    lr_finder.range_test(train_loader, val_loader=test_loader, end_lr=100, num_iter=100, step_mode="exp")
-    lr_finder.plot(skip_end=0)
+    lr_finder.range_test(train_loader, val_loader=test_loader, end_lr=10, num_iter=100, step_mode="exp")
+    lr_finder.plot(log_lr=False,skip_end=0)
     lr_finder.reset()
 # Cutout implementation by David Stutz
 # Refer https://davidstutz.de/2-percent-test-error-on-cifar10-using-pytorch-autoagument/

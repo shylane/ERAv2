@@ -8,7 +8,7 @@ def train_custom_resnet(model, optimizer, criterion, train_loader, test_loader, 
 
     summary(model, input_size=(3, 32, 32))
 
-    scheduler = OneCycleLR(optimizer, max_lr=lr_max, steps_per_epoch=len(train_loader), epochs=num_epochs, pct_start=max_at_epoch / num_epochs)
+    scheduler = OneCycleLR(optimizer, max_lr=lr_max, steps_per_epoch=len(train_loader), epochs=num_epochs, pct_start=max_at_epoch / num_epochs, anneal_strategy='linear', div_factor=10)
 
     for epoch in range(num_epochs):
         # Training
