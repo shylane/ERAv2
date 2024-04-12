@@ -7,7 +7,7 @@ The code is organized into separate files to promote modularity and reusability.
 
 - `model.py`: This file contains the neural network architecture.
 - `utils.py`: This file contains utility functions for data loading, training and evaluation.
-- `S5.ipynb`: This Jupyter notebook contains the code for training and testing the CNN.
+- `S10.ipynb`: This Jupyter notebook contains the code for training and testing the CNN. This can be run on Collab.
 - `README.md`: This file (provides instructions and overview).
 
 ## Requirements
@@ -16,7 +16,7 @@ The code is organized into separate files to promote modularity and reusability.
 - PyTorch 1.x
 - torchvision
 - torchsummary
-- pytorch-lr-finder
+- torch-lr-finder
 - tensorboard
 - matplotlib
 - tqdm
@@ -25,14 +25,14 @@ The code is organized into separate files to promote modularity and reusability.
 
 1. Clone this repository.
 2. Install required libraries: `pip install torch torchvision torchsummary matplotlib tqdm torch-lr-finder`
-3. Open the Jupyter Notebook `S11.ipynb` and follow the instructions within the notebook to train and test the CNN, and see the summary.
+3. Open the Jupyter Notebook `S10.ipynb` and follow the instructions within the notebook to train and test the CNN, and see the summary.
 
 ## Key Features
 
 * Data augmentation for training data.
 * Clear separation of model architecture and training logic.
-* Visual tracking of training and validation accuracy and loss.
-* Optional model summary using `torchsummary`.
+* Tracking of training and test accuracy and loss using tensorboard.
+* Mmodel summary using `torchsummary`.
 
 ## License
 
